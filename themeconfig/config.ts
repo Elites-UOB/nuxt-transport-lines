@@ -11,7 +11,7 @@ export const config: UnocssNuxtOptions = {
   webFonts: {
     provider: "google",
     fonts: {
-      sans: ["Tajawal:200,300,400,500,600,700,800,900"],
+      sans: ["Cairo:200,300,400,500,600,700,800,900"],
     },
   },
 
@@ -20,6 +20,7 @@ export const config: UnocssNuxtOptions = {
       getCSS: ({ theme }) => `
           * {
             font-family: ${theme["fontFamily"]["sans"]};
+            margin: 0;
           }
         `,
     },
